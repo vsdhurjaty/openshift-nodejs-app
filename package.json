@@ -8,5 +8,8 @@
     "start": "node index.js"
   },
   "author": "Saurabh Dashora",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "docker-container-id": "^1.0.1"
+  }
 }
