@@ -2,7 +2,8 @@ const http = require("http");
 const getId = require("docker-container-id");
 
 const server = http.createServer(async (req, res) => {
-  let id = await getId();
+  console.log(process.ENV);
+
   res.writeHead(200, {
     "Content-type": "text/html",
   });
