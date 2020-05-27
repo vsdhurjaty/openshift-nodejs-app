@@ -1,5 +1,4 @@
 const http = require("http");
-const getId = require("docker-container-id");
 
 const server = http.createServer(async (req, res) => {
   console.log(process.env);
