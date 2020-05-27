@@ -2,14 +2,12 @@ const http = require("http");
 const getId = require("docker-container-id");
 
 const server = http.createServer(async (req, res) => {
-  console.log(process.ENV);
+  console.log(process.env);
 
   res.writeHead(200, {
     "Content-type": "text/html",
   });
-  res.end(
-    `<h1>Hello World from OpenShift NodeJS App from ContainerId#${id}</h1>`
-  );
+  res.end(`<h1>Hello World from OpenShift NodeJS App</h1>`);
 });
 
 server.listen(8000, () => {
