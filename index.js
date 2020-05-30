@@ -1,8 +1,6 @@
 const http = require("http");
 
 const server = http.createServer(async (req, res) => {
-  console.log(process.env);
-
   res.writeHead(200, {
     "Content-type": "text/html",
   });
