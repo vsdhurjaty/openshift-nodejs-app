@@ -5,7 +5,11 @@ const server = http.createServer((req, res) => {
     "Content-Type": "text/html",
   });
 
-  res.end("<h1>Hello World from OpenShift NodeJS Application</h1>");
+  const html = `<h1>Hello World from OpenShift NodeJS Application</h1>
+  <p>Pod Name: ${process.env.MY_POD_NAME}</p>
+  <p>Application Name: ${process.env.MY_APPLICATION_NAME}</p>`;
+
+  res.end(html);
 });
 
 server.listen(8000, () => {
