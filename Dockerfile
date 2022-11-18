@@ -1,4 +1,4 @@
-#base image
+#base image 
 FROM node:alpine
 
 #specify working directory
