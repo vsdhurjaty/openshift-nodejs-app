@@ -2,9 +2,10 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  const html = `<h1>Hello World from our OpenShift NodeJS App</h1>
-  <p>My Pod Name: ${process.env.MY_POD_NAME}</p>
-  <p>My Application Name: ${process.env.MY_APPLICATION_NAME}</p>`;
+const html = `<h1>Hello World from OpenShift NodeJS App</h1>
+  <p>My Name: Venkata Dhurjaty</p>
+  <p>My Application Name: OpenShift NodeJS App</p>
+  <p>Project: CSC-227 FINAL PROJECT</p>`;
 
   res.status(200).send(html);
 });
